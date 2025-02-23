@@ -12,7 +12,18 @@ export function Hero() {
             <h1 className="heading">{profile.name}</h1>
             <p className="subheading">{profile.role}</p>
           </div>
-          <p className="text-lg text-muted">{profile.bio}</p>
+          <div>
+            {profile.bio.map((item, index) => (
+              <p
+                key={index}
+                className={`text-lg text-muted ${
+                  item.highlight ? "font-semibold" : ""
+                }`}
+              >
+                {item.text}
+              </p>
+            ))}
+          </div>
           <div className="flex flex-wrap gap-4">
             <Button as="a" href="#contact">
               Contact Me
