@@ -35,14 +35,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    url: "https://kale-portfolio.vercel.app",
+    url: "https://my-home-loll.vercel.app",
     siteName: "Kale's Portfolio",
     title: "Kale's Portfolio | Frontend Developer",
     description:
       "자바스크립트를 주 언어로 사용하는 프론트엔드 개발자 김한결입니다.",
     images: [
       {
-        url: "/images/profile/avatar_kale.jpeg",
+        url: "https://my-home-loll.vercel.app/images/profile/avatar_kale.jpeg",
         width: 1200,
         height: 630,
         alt: "Kale's Portfolio",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: "Kale's Portfolio | Frontend Developer",
     description:
       "자바스크립트를 주 언어로 사용하는 프론트엔드 개발자 김한결입니다.",
-    images: ["/images/og-image.png"],
+    images: ["https://my-home-loll.vercel.app/images/profile/avatar_kale.jpeg"],
   },
   robots: {
     index: true,
