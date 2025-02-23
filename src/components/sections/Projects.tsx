@@ -1,6 +1,7 @@
 import { projects } from "@/constants/content";
 import { Section } from "../common/Section";
 import { Button } from "../common/Button";
+import Image from "next/image";
 
 export function Projects() {
   return (
@@ -8,7 +9,7 @@ export function Projects() {
       <div className="space-y-12">
         <div>
           <h2 className="heading">Projects</h2>
-          <p className="subheading">What I've built</p>
+          <p className="subheading">What I&apos;ve built</p>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2">
@@ -19,10 +20,12 @@ export function Projects() {
             >
               {project.imageUrl && (
                 <div className="mb-6 overflow-hidden rounded-lg border border-border">
-                  <img
+                  <Image
                     src={project.imageUrl}
                     alt={project.title}
-                    className="w-full transition-transform duration-300 group-hover:scale-105"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               )}

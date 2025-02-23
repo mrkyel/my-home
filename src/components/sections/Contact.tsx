@@ -7,7 +7,7 @@ export function Contact() {
       <div className="space-y-12">
         <div>
           <h2 className="heading">Contact</h2>
-          <p className="subheading">Let's get in touch</p>
+          <p className="subheading">Let&apos;s get in touch</p>
         </div>
 
         <div className="mx-auto max-w-2xl space-y-8">
