@@ -8,22 +8,6 @@ export function Footer() {
           <p className="text-sm text-muted">
             © {new Date().getFullYear()} {profile.name}. All rights reserved.
           </p>
-          <div className="flex gap-4">
-            <a
-              href={profile.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted transition-colors hover:text-foreground"
-            >
-              GitHub
-            </a>
-            <a
-              href={`mailto:${profile.email}`}
-              className="text-muted transition-colors hover:text-foreground"
-            >
-              Email
-            </a>
-          </div>
         </div>
       </div>
     </footer>
