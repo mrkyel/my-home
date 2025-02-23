@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "./theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
       "자바스크립트를 주 언어로 사용하는 프론트엔드 개발자 김한결입니다.",
     images: [
       {
-        url: "https://my-home-loll.vercel.app/images/profile/avatar_kale.jpeg",
+        url: "https://my-home-loll.vercel.app/images/og/frontend_og.jpg",
         width: 1200,
         height: 630,
         alt: "Kale's Portfolio",
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     title: "Kale's Portfolio | Frontend Developer",
     description:
       "자바스크립트를 주 언어로 사용하는 프론트엔드 개발자 김한결입니다.",
-    images: ["https://my-home-loll.vercel.app/images/profile/avatar_kale.jpeg"],
+    images: ["https://my-home-loll.vercel.app/images/og/frontend_og.jpg"],
   },
   robots: {
     index: true,
@@ -88,6 +89,7 @@ export default function RootLayout({
           <Header />
           <div className="flex-1 pt-16">{children}</div>
           <Footer />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
