@@ -9,10 +9,7 @@ export const profile: Profile = {
       text: "최선의 구조를 설계하기 위해서는 제품에 대한 이해도가 가장 중요하다고 생각합니다.",
     },
     {
-      text: "언제 어디서나 그리고 누구에게나 배울 것이 있다는 것을 알고 있으며, 배울 준비가 되어있습니다.",
-    },
-    {
-      text: "타인과의 원만한 소통이 개발자에게 매우 중요한 덕목임을 믿습니다.",
+      text: "그리고 제품의 이해도를 높이기 위해서는, 타인과의 원만한 소통이 매우 중요하다고 생각합니다.",
       highlight: true,
     },
     {
@@ -23,7 +20,6 @@ export const profile: Profile = {
   email: "kyel100@naver.com",
   github: "https://github.com/mrkyel",
   linkedin: "https://www.linkedin.com/in/한결-김-724147176",
-  phone: "010-8770-3506",
 };
 
 export const skills = {
@@ -69,7 +65,16 @@ export const experiences: Experience[] = [
       "RAG 모델 생성하여 LLM 채팅 가능하도록 구현",
       "Canvas를 활용하여 지도 위에 다양한 표시를 할 수 있는 Tool 개발",
     ],
-    skills: ["React", "TypeScript", "Node.js", "Socket.io", "Canvas"],
+    skills: [
+      "React",
+      "Recoil",
+      "TypeScript",
+      "Vite",
+      "Node.js",
+      "Socket.io",
+      "Canvas",
+      "Git",
+    ],
   },
   {
     company: "위시빈",
@@ -82,7 +87,7 @@ export const experiences: Experience[] = [
       "Next.js, React-Query, Zustand를 활용하여 SSR적용 토이프로젝트 진행",
       "SEO 최적화를 위해 메타 태그 분석 및 프리렌더링 효과 R&D",
     ],
-    skills: ["Angular", "Next.js", "React-Query", "Zustand"],
+    skills: ["Angular", "Rxjs", "Git", "Next.js", "React-Query", "Zustand"],
   },
   {
     company: "아토리서치",
@@ -95,7 +100,14 @@ export const experiences: Experience[] = [
       "모노레포 구성 및 서비스 분리 방법 R&D",
       "Linux Ubuntu 서버에 Nginx 셋팅 후 프론트엔드 배포 환경 구성",
     ],
-    skills: ["React", "Webpack", "Babel", "Verdaccio", "Nginx"],
+    skills: [
+      "React",
+      "Redux-Toolkit",
+      "Webpack",
+      "Babel",
+      "Verdaccio",
+      "Nginx",
+    ],
   },
   {
     company: "잉카인터넷",
@@ -130,6 +142,18 @@ export const projects: Project[] = [
     period: "2022.02",
     description: "Web Socket과 Vanilla JS를 활용하여 전자칠판 구현",
     skills: ["JavaScript", "WebSocket"],
+  },
+  {
+    title: "RAG 및 AI Agent 개발",
+    period: "2025.02",
+    description: "개인 공부로 이력서 피드백이 가능한 RAG챗봇 및 AI Agent 개발",
+    skills: ["React", "LangChain", "Gemini", "ChromaDB", "etc"],
+  },
+  {
+    title: "개인 홈페이지 구현",
+    period: "2025.02",
+    description: "SEO 연습 겸 이력서 용도로 구현한 홈페이지",
+    skills: ["React", "Next.js", "Tailwind CSS"],
   },
 ];
 

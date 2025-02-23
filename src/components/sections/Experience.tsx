@@ -29,7 +29,7 @@ export function Experience() {
               <ul className="mb-6 space-y-2 text-muted">
                 {experience.description.map((desc, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary" />
+                    <span className="mt-[0.4375rem] h-[0.375rem] w-[0.375rem] flex-shrink-0 rounded-full bg-primary" />
                     <span>{desc}</span>
                   </li>
                 ))}

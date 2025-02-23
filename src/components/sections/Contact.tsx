@@ -12,8 +12,9 @@ export function Contact() {
 
         <div className="mx-auto max-w-2xl space-y-8">
           <p className="text-center text-lg text-muted">
-            새로운 기회나 협업에 관심이 있습니다. 언제든 연락 주시면
-            감사하겠습니다.
+            새로운 기회나 협업에 관심이 있습니다.
+            <br />
+            언제든 연락 주시면 감사하겠습니다.
           </p>
 
           <div className="grid gap-6 sm:grid-cols-2">

@@ -1,4 +1,4 @@
-import { education, profile, certificates } from "@/constants/content";
+import { education, certificates } from "@/constants/content";
 import { Section } from "../common/Section";
 
 export function About() {
@@ -74,38 +74,6 @@ export function About() {
                 ))}
               </div>
             </div>
-          </div>
-
-          <div className="flex flex-wrap gap-4">
-            <a
-              href={`mailto:${profile.email}`}
-              className="flex items-center gap-2 text-muted hover:text-foreground"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
-                <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
-              </svg>
-              {profile.email}
-            </a>
-            <a
-              href={`tel:${profile.phone}`}
-              className="flex items-center gap-2 text-muted hover:text-foreground"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-              </svg>
-              {profile.phone}
-            </a>
           </div>
         </div>
       </div>
