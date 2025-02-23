@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kale's Portfolio
 
-## Getting Started
+Next.js 15 App Router와 TypeScript를 활용하여 개발한 개인 포트폴리오 웹사이트입니다.
 
-First, run the development server:
+## 🔗 배포 링크
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://my-home-loll.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 기술 스택
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 15 (App Router)
+- **Language**: Javascript, TypeScript
+- **Styling**: TailwindCSS
+- **Deployment**: Vercel
 
-## Learn More
+## 🌟 주요 기능
 
-To learn more about Next.js, take a look at the following resources:
+### 1. 반응형 디자인
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 모바일, 태블릿, 데스크톱 등 다양한 디바이스에 최적화된 반응형 레이아웃
+- TailwindCSS를 활용한 효율적인 스타일링
+- 모바일 메뉴 Portal 구현
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. 다크모드
 
-## Deploy on Vercel
+- 사용자 시스템 설정 기반 자동 테마 적용
+- localStorage를 활용한 테마 설정 유지
+- Context API를 활용한 테마 상태 관리
+- 부드러운 테마 전환 애니메이션
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. SEO 최적화
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js Metadata API를 활용한 동적 메타데이터 관리
+- Open Graph 태그 최적화
+- 사이트맵 자동 생성
+- robots.txt 설정
+
+### 4. 성능 최적화
+
+- Next.js Image 컴포넌트를 활용한 이미지 최적화
+- 컴포넌트 레벨의 코드 스플리팅
+- 효율적인 번들 사이즈 관리
+- 스크롤 이벤트 최적화
+
+### 5. 접근성
+
+- 시맨틱 HTML 마크업
+- ARIA 레이블 적용
+- 키보드 네비게이션 지원
+
+## 📜 라이선스
+
+MIT License
