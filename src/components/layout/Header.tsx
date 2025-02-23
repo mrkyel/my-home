@@ -1,6 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
-import { Button } from "../common/Button";
 import { ThemeToggle } from "../common/ThemeToggle";
+import { MobileMenu } from "./MobileMenu";
 
 const navigation = [
   { name: "About", href: "#about" },
@@ -10,6 +13,8 @@ const navigation = [
 ];
 
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between">
@@ -34,18 +39,10 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <ThemeToggle />
-          <Button
-            as="a"
-            href="/resume.pdf"
-            variant="outline"
-            size="sm"
-            className="hidden sm:inline-flex"
-          >
-            Resume
-          </Button>
           <button
             type="button"
             className="rounded-md p-2 text-muted hover:bg-muted/10 hover:text-foreground sm:hidden"
+            onClick={() => setIsMenuOpen(true)}
             aria-label="Toggle menu"
           >
             <svg
@@ -65,6 +62,11 @@ export function Header() {
           </button>
         </div>
       </div>
+      <MobileMenu
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+        navigation={navigation}
+      />
     </header>
   );
 }

@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "자바스크립트를 주 언어로 사용하는 프론트엔드 개발자 김한결입니다.",
     images: [
       {
-        url: "/images/og-image.png", // Open Graph 이미지 필요
+        url: "/images/profile/avatar_kale.jpeg",
         width: 1200,
         height: 630,
         alt: "Kale's Portfolio",
