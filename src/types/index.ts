@@ -19,7 +19,10 @@ export interface Project {
 export interface Profile {
   name: string;
   role: string;
-  bio: string;
+  bio: Array<{
+    text: string;
+    highlight?: boolean;
+  }>;
   email: string;
   github: string;
   linkedin: string;

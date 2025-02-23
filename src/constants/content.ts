@@ -3,7 +3,23 @@ import { Experience, Profile, Project } from "@/types";
 export const profile: Profile = {
   name: "김한결",
   role: "Front-End Developer",
-  bio: "자바스크립트를 주 언어로 사용하는 프론트엔드 개발자입니다. 최선의 구조를 설계하기 위해서는 제품에 대한 이해도가 가장 중요하다고 생각합니다. 언제 어디서나 그리고 누구에게나 배울 것이 있다는 것을 알고 있으며, 배울 준비가 되어있습니다. 타인과의 원만한 소통이 개발자에게 매우 중요한 덕목임을 믿습니다.",
+  bio: [
+    { text: "자바스크립트를 주 언어로 사용하는 프론트엔드 개발자입니다." },
+    {
+      text: "최선의 구조를 설계하기 위해서는 제품에 대한 이해도가 가장 중요하다고 생각합니다.",
+    },
+    {
+      text: "언제 어디서나 그리고 누구에게나 배울 것이 있다는 것을 알고 있으며, 배울 준비가 되어있습니다.",
+    },
+    {
+      text: "타인과의 원만한 소통이 개발자에게 매우 중요한 덕목임을 믿습니다.",
+      highlight: true,
+    },
+    {
+      text: "최근에는 RAG챗봇과 AI Agent 개발에 관심이 많습니다.",
+      highlight: true,
+    },
+  ],
   email: "kyel100@naver.com",
   github: "https://github.com/mrkyel",
   linkedin: "https://www.linkedin.com/in/한결-김-724147176",
@@ -129,15 +145,14 @@ export const education = {
 export const certificates = [
   {
     name: "정보처리기사",
-    date: "2019.05",
-    description: "독학으로 CS에 대한 이해를 높이기 위해 취득",
+    date: "2019. 05.",
   },
   {
     name: "SQLD",
-    date: "2018.12",
+    date: "2018. 12.",
   },
   {
     name: "리눅스마스터 2급",
-    date: "2018.12",
+    date: "2018. 12.",
   },
 ];
