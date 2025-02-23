@@ -14,7 +14,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="text-xl font-bold">
-          Okky
+          Kale&apos;s Portfolio
         </Link>
 
         <nav className="hidden sm:block">

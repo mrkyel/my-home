@@ -1,4 +1,5 @@
 import { profile } from "@/constants/content";
+import Image from "next/image";
 import { Button } from "../common/Button";
 import { Section } from "../common/Section";
 
@@ -12,7 +13,7 @@ export function Hero() {
             <p className="subheading">{profile.role}</p>
           </div>
           <p className="text-lg text-muted">{profile.bio}</p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <Button as="a" href="#contact">
               Contact Me
             </Button>
@@ -25,10 +26,28 @@ export function Hero() {
             >
               GitHub
             </Button>
+            <Button
+              as="a"
+              href={profile.linkedin}
+              variant="ghost"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </Button>
           </div>
         </div>
-        <div className="hidden sm:flex items-center justify-center">
-          {/* 여기에 프로필 이미지나 애니메이션을 추가할 수 있습니다 */}
+        <div className="hidden items-center justify-center sm:flex">
+          <div className="relative h-64 w-64 overflow-hidden rounded-full border-2 border-primary bg-muted/5">
+            <Image
+              src="/images/profile/avatar_kale.jpeg"
+              alt={profile.name}
+              fill
+              sizes="256px"
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </div>
     </Section>

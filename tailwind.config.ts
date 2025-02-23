@@ -9,11 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "var(--primary)",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        muted: "var(--muted)",
-        border: "var(--border)",
+        primary: "hsl(var(--primary))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        muted: "hsl(var(--muted))",
+        border: "hsl(var(--border))",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
