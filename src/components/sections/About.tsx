@@ -45,10 +45,18 @@ export function About() {
             <div className="rounded-lg border border-border p-6">
               <div className="space-y-4">
                 {certificates.map((cert, index) => (
-                  <div key={index} className="space-y-1">
-                    <div className="flex items-center justify-between gap-16">
-                      <h4 className="text-base font-semibold">{cert.name}</h4>
-                      <span className="ml-4 shrink-0 text-sm text-muted">
+                  <div key={index} className="space-y-2">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4">
+                      <div className="space-y-1">
+                        <h4 className="text-base font-semibold">{cert.name}</h4>
+                        <p className="text-sm text-muted">
+                          Certificate No. {cert.number}
+                        </p>
+                        <p className="text-sm text-muted/80">
+                          {cert.organization}
+                        </p>
+                      </div>
+                      <span className="shrink-0 text-sm text-muted">
                         <span className="tabular-nums">{cert.date}</span>
                       </span>
                     </div>
