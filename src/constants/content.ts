@@ -13,7 +13,10 @@ export const profile: Profile = {
       highlight: true,
     },
     {
-      text: "최근에는 RAG챗봇과 AI Agent 개발에 관심이 많습니다.",
+      text: "React를 활용한 화면구현에 가장 익숙합니다.",
+    },
+    {
+      text: "최근에는 MCP와 AI Agent를 활용하여 Vibe 코딩하는 것에 관심이 많습니다.",
       highlight: true,
     },
   ],
@@ -158,12 +161,22 @@ export const projects: Project[] = [
 ];
 
 export const education = {
-  school: "한국외국어대학교",
-  period: "2011.02 - 2015.02",
-  major: "중앙아시아학과 (우즈베키스탄어 전공)",
-  minor: "국제경영학 부전공",
-  gpa: "3.74 / 4.5",
-  details: ["우즈베키스탄 교환학생 및 코트라 인턴 수료", "홍콩에서 인턴경험"],
+  university: {
+    school: "한국외국어대학교",
+    period: "2011.02 - 2015.02",
+    major: "중앙아시아학과 (우즈베키스탄어 전공)",
+    minor: "국제경영학 부전공",
+    gpa: "3.74 / 4.5",
+    details: ["우즈베키스탄 교환학생 및 코트라 인턴 수료", "홍콩에서 인턴경험"],
+  },
+  vocational: {
+    school: "에이콘아카데미",
+    course:
+      "프론트엔드(ReactJS, AngularJS) 개발을 위한 자바(JAVA)웹개발자 양성과정",
+    period: "2019.03.12 - 2019.08.02",
+    type: "국가기간전략산업직종",
+    result: "오늘의집 Q&A게시판 Spring 구현",
+  },
 };
 
 export const certificates = [
