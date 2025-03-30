@@ -68,18 +68,36 @@ export function About() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-bold">Education</h3>
-            <div className="rounded-lg border border-border p-6">
-              <div className="mb-4">
-                <h4 className="text-lg font-semibold">{education.school}</h4>
-                <p className="text-muted">{education.period}</p>
+            <div className="space-y-4">
+              <div className="rounded-lg border border-border p-6">
+                <div className="mb-4">
+                  <h4 className="text-lg font-semibold">
+                    {education.university.school}
+                  </h4>
+                  <p className="text-muted">{education.university.period}</p>
+                </div>
+                <div className="space-y-2 text-muted">
+                  <p>• {education.university.major}</p>
+                  <p>• {education.university.minor}</p>
+                  <p>• GPA: {education.university.gpa}</p>
+                  {education.university.details.map((detail, index) => (
+                    <p key={index}>• {detail}</p>
+                  ))}
+                </div>
               </div>
-              <div className="space-y-2 text-muted">
-                <p>• {education.major}</p>
-                <p>• {education.minor}</p>
-                <p>• GPA: {education.gpa}</p>
-                {education.details.map((detail, index) => (
-                  <p key={index}>• {detail}</p>
-                ))}
+
+              <div className="rounded-lg border border-border p-6">
+                <div className="mb-4">
+                  <h4 className="text-lg font-semibold">
+                    {education.vocational.school}
+                  </h4>
+                  <p className="text-muted">{education.vocational.period}</p>
+                  <br />
+                  <p className="font-medium">{education.vocational.course}</p>
+                </div>
+                <div className="space-y-2 text-muted">
+                  <p>• 최종 프로젝트: {education.vocational.result}</p>
+                </div>
               </div>
             </div>
           </div>
