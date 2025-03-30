@@ -169,14 +169,17 @@ export const education = {
 export const certificates = [
   {
     name: "정보처리기사",
-    date: "2019. 05.",
+    date: "2019. 05.22",
+    number: "19201021355V",
   },
   {
     name: "SQLD",
-    date: "2018. 12.",
+    date: "2018. 12.09",
+    number: "SQLD-0310580",
   },
   {
     name: "리눅스마스터 2급",
-    date: "2018. 12.",
+    date: "2018. 12.09",
+    number: "LMS-1804-002188",
   },
 ];
