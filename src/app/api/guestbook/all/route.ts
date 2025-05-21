@@ -1,18 +1,24 @@
 import { NextResponse } from "next/server";
-import { mockGuestbooks } from "../route";
 
 /**
- * 모든 방명록 조회 API - 모킹 데이터 사용
+ * 모든 방명록 조회 API - 백엔드 서버 호출
  */
 export async function GET() {
   try {
-    console.log("모든 방명록 조회 - 모킹 데이터 사용");
-
-    // 모킹 데이터를 응답 객체로 래핑하여 반환
-    return NextResponse.json({
-      success: true,
-      data: mockGuestbooks,
+    // 실제 백엔드 서버에서 데이터 조회
+    const response = await fetch("http://localhost:8080/api/guestbook/all", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
+
+    if (!response.ok) {
+      throw new Error("방명록 조회에 실패했습니다.");
+    }
+
+    const data = await response.json();
+    return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("방명록 조회 에러:", error);
     return NextResponse.json(

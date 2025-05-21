@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "../../auth/[...nextauth]/route";
+import { authOptions } from "../../auth/[...nextauth]/authOptions";
 import { getToken } from "next-auth/jwt";
 
 const BACKEND_URL =
@@ -9,10 +9,9 @@ const BACKEND_URL =
 /**
  * 방명록 삭제 API
  */
-export async function DELETE(
-  request: NextRequest,
-  { params }: { params: { id: string } }
-) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function DELETE(request: any, context: any) {
+  const { params } = context;
   try {
     const token = await getToken({ req: request });
     const session = await getServerSession(authOptions);
