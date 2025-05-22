@@ -1,20 +1,26 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "../../auth/[...nextauth]/authOptions";
 import { getToken } from "next-auth/jwt";
 
-const BACKEND_URL =
-  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8080";
+const BACKEND_URL = (
+  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8080"
+).replace(/\/$/, "");
 
 /**
  * 방명록 삭제 API
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export async function DELETE(request: any, context: any) {
+export async function DELETE(request: NextRequest, context: any) {
   const { params } = context;
   try {
-    const token = await getToken({ req: request });
+    const token = await getToken({
+      req: request,
+      secret: process.env.NEXTAUTH_SECRET,
+    });
     const session = await getServerSession(authOptions);
+
+    console.log("DELETE 토큰:", token);
 
     if (!session?.user) {
       return NextResponse.json(
@@ -35,7 +41,6 @@ export async function DELETE(request: any, context: any) {
     const response = await fetch(`${BACKEND_URL}/api/guestbook/${id}`, {
       method: "DELETE",
       headers: fetchHeaders,
-      credentials: "include",
     });
 
     if (!response.ok) {
