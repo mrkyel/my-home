@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "./theme-provider";
+import { AuthProvider } from "@/providers/AuthProvider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ScrollToTop } from "@/components/common/ScrollToTop";
@@ -84,13 +85,18 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="flex min-h-screen flex-col font-sans">
-        <ThemeProvider>
-          <Header />
-          <div className="flex-1 pt-16">{children}</div>
-          <Footer />
-          <ScrollToTop />
-        </ThemeProvider>
+      <body
+        className="flex min-h-screen flex-col font-sans"
+        suppressHydrationWarning
+      >
+        <AuthProvider>
+          <ThemeProvider>
+            <Header />
+            <div className="flex-1 pt-16">{children}</div>
+            <Footer />
+            <ScrollToTop />
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );
