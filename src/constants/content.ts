@@ -67,6 +67,7 @@ export const experiences: Experience[] = [
       "LLM 엔진별로 config값 세팅하여 바로 테스트 채팅할 수 있는 ChatPlay 메인개발",
       "RAG 모델 생성하여 LLM 채팅 가능하도록 구현",
       "Canvas를 활용하여 지도 위에 다양한 표시를 할 수 있는 Tool 개발",
+      "로봇 제어를 위한 안드로이드 웹뷰 개발 및 프론트엔드 개발",
     ],
     skills: [
       "React",
@@ -123,6 +124,18 @@ export const experiences: Experience[] = [
       "Ant Design을 활용하여 빠른 스타일링으로 Admin 리팩토링",
     ],
     skills: ["React", "Mobx", "Ant Design"],
+  },
+  {
+    company: "경진에셋",
+    position: "지점장",
+    period: "2016.03 - 2018.06",
+    description: [
+      "신도림사업단에서 사업단장으로 영업지점관리 및 직원들 영업교육 담당",
+      "구로사업단에서 부사업단장으로 영업지원 및 총무업무 겸임",
+      "본사 을지로지점에서 총무업무 겸임",
+      "손해보험, 생명보험, 변액보험 자격증 직접취득하여 직원들 자격증 취득 독려 및 교육",
+    ],
+    skills: ["영업관리", "총무", "직원 관리 및 교육"],
   },
 ];
 
