@@ -11,7 +11,7 @@ const navigation = [
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
-  { name: "방명록", href: "/guestbook" },
+  // { name: "방명록", href: "/guestbook" },
 ];
 
 export function Header() {
