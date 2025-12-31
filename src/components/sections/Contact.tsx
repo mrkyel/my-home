@@ -20,7 +20,7 @@ export function Contact() {
           <div className="grid gap-6 sm:grid-cols-2">
             <a
               href={`mailto:${profile.email}`}
-              className="flex flex-col items-center gap-4 rounded-lg border border-border p-6 text-center transition-colors hover:bg-muted/5"
+              className="flex flex-col items-center gap-4 rounded-lg border border-border bg-background p-6 text-center shadow-sm transition-all hover:bg-muted/5 hover:shadow-md hover:border-primary/20"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export function Contact() {
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-4 rounded-lg border border-border p-6 text-center transition-colors hover:bg-muted/5"
+              className="flex flex-col items-center gap-4 rounded-lg border border-border bg-background p-6 text-center shadow-sm transition-all hover:bg-muted/5 hover:shadow-md hover:border-primary/20"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

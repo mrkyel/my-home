@@ -16,7 +16,7 @@ export function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group rounded-lg border border-border p-6 transition-colors hover:bg-muted/5"
+              className="group rounded-lg border border-border bg-background p-6 shadow-sm transition-all hover:bg-muted/5 hover:shadow-md hover:border-primary/20"
             >
               {project.imageUrl && (
                 <div className="mb-6 overflow-hidden rounded-lg border border-border">

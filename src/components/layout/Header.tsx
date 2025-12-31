@@ -6,12 +6,12 @@ import { ThemeToggle } from "../common/ThemeToggle";
 import { MobileMenu } from "./MobileMenu";
 
 const navigation = [
-  { name: "About", href: "#about" },
+  { name: "Value", href: "#value" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
+  { name: "About", href: "#about" },
   { name: "Contact", href: "#contact" },
-  // { name: "방명록", href: "/guestbook" },
 ];
 
 export function Header() {
@@ -30,7 +30,7 @@ export function Header() {
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className="text-muted transition-colors hover:text-foreground"
+                  className="text-muted transition-colors hover:text-foreground relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
                 >
                   {item.name}
                 </Link>
