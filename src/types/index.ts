@@ -3,7 +3,9 @@ export interface Experience {
   position: string;
   period: string;
   description: string[];
+  achievements?: string[];
   skills: string[];
+  reasonForLeaving?: string;
 }
 
 export interface Project {
@@ -19,6 +21,7 @@ export interface Project {
 export interface Profile {
   name: string;
   role: string;
+  headline?: string;
   bio: Array<{
     text: string;
     highlight?: boolean;
@@ -51,7 +54,18 @@ export interface Skills {
     styling: string[];
     bundler: string[];
   };
+  ai?: {
+    llm: string[];
+    tools: string[];
+  };
+  backend?: string[];
   collaboration: string[];
   devops: string[];
   etc: string[];
+}
+
+export interface ValueProposition {
+  title: string;
+  description: string;
+  icon: string;
 }

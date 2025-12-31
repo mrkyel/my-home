@@ -54,6 +54,28 @@ export function Skills() {
             </div>
           </div>
 
+          {skills.ai && (
+            <div className="space-y-6">
+              <h3 className="text-xl font-bold">AI & LLM</h3>
+              <div className="grid gap-6 sm:grid-cols-2">
+                <SkillCategory title="LLM & Agent" items={skills.ai.llm} />
+                <SkillCategory title="AI Tools" items={skills.ai.tools} />
+              </div>
+            </div>
+          )}
+
+          {skills.backend && (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-bold">Backend</h3>
+                <p className="mt-1 text-sm text-muted">
+                  이해도 있음 (큰 서비스 운영 경험은 부족)
+                </p>
+              </div>
+              <SkillCategory title="Technologies" items={skills.backend} />
+            </div>
+          )}
+
           <div className="grid gap-6 sm:grid-cols-2">
             <SkillCategory title="DevOps" items={skills.devops} />
             <SkillCategory title="Collaboration" items={skills.collaboration} />

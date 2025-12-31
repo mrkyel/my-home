@@ -10,33 +10,52 @@ export function About() {
           <p className="subheading">Let me introduce myself</p>
         </div>
         <div className="space-y-8">
-          <div className="space-y-4 text-lg">
-            <div className="space-y-4 text-muted">
-              <p>
-                저는 한국외국어대학교에서 중앙아시아학을 전공하고 국제경영학을
-                부전공하며 다양한 해외 경험을 쌓았습니다.
-              </p>
-              <p>
-                졸업 후에는 약 2년 반 동안 영업직으로 근무하며 비즈니스
-                커뮤니케이션 능력을 키웠습니다. 비록 개발 직군과 직접적인
-                연관성은 없지만, 이 경험을 통해 얻은 소통 능력과 문제 해결
-                능력은 현재 개발자로서의 업무에도 큰 도움이 되고 있습니다.
-              </p>
-              <p>
-                5년 이상의 프론트엔드 개발 경험을 통해 React, Angular 등 다양한
-                프레임워크를 다뤄왔으며, 특히 마이그레이션 프로젝트와 새로운
-                기술 도입에 강점이 있습니다. 현재는 마음AI에서 음성인식 및 LLM
-                관련 프로젝트들과 백오피스 만들기 등을 진행하고 있습니다.
-              </p>
-              <p>
-                저는 Git을 사용한 형상관리에 익숙하며 여러 팀원들과의 협업 시
-                이를 이끌어 나갈 능력이 있습니다.
-              </p>
-              <p>
-                개발자의 미래가 빠르게 변화하고 있지만, 아직 제가 할 수 있는
-                부분이 많다고 생각되며, 앞으로도 풀스택 개발자를 목표로 계속해서
-                발전해 나가고자 합니다.
-              </p>
+          <div className="space-y-6 text-lg">
+            <div className="space-y-4">
+              <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4">
+                <h4 className="mb-2 font-semibold text-foreground">
+                  비즈니스 이해도와 소통 능력
+                </h4>
+                <p className="text-muted">
+                  영업 경험을 통해 쌓은 비즈니스 이해도와 소통 능력으로, 개발자와
+                  기획자/디자이너 간의 원활한 협업을 이끌어냅니다. 제품의 비즈니스
+                  가치를 이해하고 기술적 솔루션으로 구현하는 데 강점이 있습니다.
+                </p>
+              </div>
+
+              <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4">
+                <h4 className="mb-2 font-semibold text-foreground">
+                  최신 기술 트렌드 반영
+                </h4>
+                <p className="text-muted">
+                  AI/LLM 프로젝트를 주도적으로 개발하며 최신 기술 트렌드를
+                  프로젝트에 잘 반영하고 있습니다. RAG, AI Agent, MCP 등 차세대 기술을 실제
+                  프로젝트에 적용한 경험이 있어, 회사의 기술 혁신에 기여할 수 있습니다.
+                </p>
+              </div>
+
+              <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4">
+                <h4 className="mb-2 font-semibold text-foreground">
+                  레거시 시스템 현대화 경험
+                </h4>
+                <p className="text-muted">
+                  Angular → React 마이그레이션을 외부 라이브러리 없이 완료한
+                  경험이 있습니다. 레거시 시스템을 현대적인 기술 스택으로
+                  전환하여 유지보수성과 개발 생산성을 향상시키는 데 경험이
+                  있습니다.
+                </p>
+              </div>
+
+              <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4">
+                <h4 className="mb-2 font-semibold text-foreground">
+                  백엔드 이해도 & 커리어 전환 의지
+                </h4>
+                <p className="text-muted">
+                  Node.js, Spring Boot 등 백엔드 기술에 대한 이해가 있으며, 전체 시스템을 고려한 개발 관점을 가지고 있습니다. 
+                  큰 서비스를 직접 운영해본 경험은 아직 부족하지만, 백엔드 개발자로의 커리어 전환이나 다른 포지션으로의 전향에 매우 열려있습니다. 
+                  새로운 도전을 통해 성장하고 기여할 준비가 되어있습니다.
+                </p>
+              </div>
             </div>
           </div>
 

@@ -14,7 +14,7 @@ export function Experience() {
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className="rounded-lg border border-border p-6 transition-colors hover:bg-muted/5"
+              className="rounded-lg border border-border bg-background p-6 shadow-sm transition-all hover:bg-muted/5 hover:shadow-md hover:border-primary/20"
             >
               <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
                 <div>
@@ -34,6 +34,31 @@ export function Experience() {
                   </li>
                 ))}
               </ul>
+
+              {experience.achievements && experience.achievements.length > 0 && (
+                <div className="mb-6 rounded-lg bg-primary/5 p-4">
+                  <h4 className="mb-2 text-sm font-semibold text-primary">
+                    주요 성과
+                  </h4>
+                  <ul className="space-y-1 text-sm text-muted">
+                    {experience.achievements.map((achievement, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="mt-0.5 flex-shrink-0 text-primary">✓</span>
+                        <span className="leading-relaxed">{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {experience.reasonForLeaving && (
+                <div className="mb-6 rounded-lg border border-muted/20 bg-muted/5 p-4">
+                  <h4 className="mb-1 text-xs font-semibold text-muted">
+                    퇴직 사유
+                  </h4>
+                  <p className="text-sm text-muted">{experience.reasonForLeaving}</p>
+                </div>
+              )}
 
               <div className="flex flex-wrap gap-2">
                 {experience.skills.map((skill) => (
